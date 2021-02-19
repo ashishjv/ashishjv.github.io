@@ -1,0 +1,118 @@
+:root {
+    --linBlue: rgb(46, 113, 172);
+    --linBrown: rgb(172, 156, 105);
+    --linGrey: rgb(173, 173, 173);
+}
+
+html {
+    font-size: 16px;
+    font-size: 62.5%;
+}
+
+div.page[size="US-Letter"] {
+    width: 8.5in;
+    height: 11in;
+    padding: 0.5in;
+    margin: 0;
+    display: block;
+    background-color: rgb(245, 245, 245);
+}
+
+@media print {
+    html,
+    body {
+        width: 8.5in;
+        height: 11in;
+    }
+}
+
+body {
+    font-family: DDG_ProximaNova, DDG_ProximaNova_UI_0, DDG_ProximaNova_UI_1, DDG_ProximaNova_UI_2, DDG_ProximaNova_UI_3, DDG_ProximaNova_UI_4, DDG_ProximaNova_UI_5, DDG_ProximaNova_UI_6, "Proxima Nova", "Helvetica Neue", Helvetica, "Segoe UI", "Nimbus Sans L", "Liberation Sans", "Open Sans", FreeSans, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 21px;
+    background-color: rgb(170, 170, 170);
+}
+
+.header {
+    display: block;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px lightgray;
+    box-shadow: 0 0 3px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.transparent-text {
+    /* color: white; */
+    /* Fallback: assume this color ON TOP of image */
+    /* background-image: url("Icons/google_color.png");
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    /* ----------
+    background:  linear-gradient(90deg, rgb(57, 19, 230) 0%, rgba(253,29,29,0.6) 60%, rgba(252,176,69,1) 100%); */
+    /* background: repeating-linear-gradient(-55deg, #4285F4, #EA4335 30px, #FFBB00 30px, #4285F4 30px, #34A853 30px, #EA4335 30px); */
+    background-image: linear-gradient(30deg, #4285f4 8.33%, #ea4335 8.33%, #ea4335 16.67%, #ffbb00 16.67%, #ffbb00 25%, #4285f4 25%, #4285f4 33.33%, #34a853 33.33%, #34a853 41.67%, #ea4335 41.67%, #ea4335 50%, #4285f4 50%, #4285f4 58.33%, #ea4335 58.33%, #ea4335 66.67%, #ffbb00 66.67%, #ffbb00 75%, #4285f4 75%, #4285f4 83.33%, #34a853 83.33%, #34a853 91.67%, #ea4335 91.67%, #ea4335 100%);
+    background-size: 127.28px 127.28px;
+    background-origin: content-box;
+    color: white;
+    /* background: linear-gradient(45deg, #4285F4, #00A1F1, #34A853, #7CBB00, #FBBC05, #FFBB00, #EA4335, #F65314); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.full-name {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    /* color: var(--linBlue); */
+    text-shadow: 0px 2px 0.5px rgba(0, 0, 255, 0.1);
+}
+
+ul.line2 {
+    list-style-type: none;
+    padding-inline-start: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+li.stickers {
+    display: inline-block;
+    margin: 0.5px;
+    margin-left: 0px;
+    padding: 5px;
+    white-space: nowrap;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.4;
+    vertical-align: middle;
+    border-radius: 2px;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 0px 0px 3px 0.5px rgba(0, 0, 0, 0.1);
+}
+
+img.stickerIcons {
+    height: 14px;
+    width: auto;
+    border-radius: 2px;
+    vertical-align: middle;
+    /* margin-right: 2px; */
+}
+
+.blocks {
+    display: block;
+    margin-top: 10px;
+    padding-left: 0.5in;
+    padding-right: 0.5in;
+    padding-top: 10px;
+    /* box-shadow: 0px 0px 3px 0.5px rgba(0, 0, 0, 0.5); */
+    /* box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+    border-radius: 5px;; */
+    background-color: white;
+}
