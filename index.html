@@ -1,169 +1,123 @@
 <!DOCTYPE html>
-<html lang="en" ; border: "5px solid black;">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" content="width=device-width, initial-scale=1">
-    <title>Ashish</title>
-    <link rel="stylesheet" href="ashishjv.github.io/styles.css">
-    <link rel="stylesheet" href="ashishjv.github.io/work-card.css">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>AshishJV</title>
+    <style>
+        body {
+            background-color: #24292f;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+        
+        .contact-card {
+            margin: 0 auto;
+            margin-top: 50px;
+            position: relative;
+            width: 3.5in;
+            height: 2in;
+            /* display: block; */
+            /* margin: 0 auto; */
+            padding: 20px;
+            /* box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5); */
+            box-sizing: border-box;
+            background-color: white;
+            border-radius: 10px;
+            border: solid 1px black;
+            /* box-shadow: 2 2 10px 2px gray; */
+        }
+        
+        .myName {
+            font-weight: 500;
+            font-size: 16px;
+            color: #333;
+            text-align: left;
+        }
+        
+        .myRole {
+            color: #E32934;
+            font-weight: 400;
+            text-align: left;
+        }
+        
+        .left-side {
+            width: fit-content;
+            padding-top: 5px;
+        }
+        
+        img.stickerIcons {
+            height: 25px;
+            padding-right: 7px;
+        }
+        
+        .middle-side {
+            display: inline-block;
+            justify-content: baseline;
+            padding-bottom: 3px;
+        }
+        
+        .right-side {
+            width: 100%;
+            text-align: right;
+            float: right;
+        }
+        
+        .myGitHub {
+            font-size: 13px;
+            color: #333;
+        }
+        
+        .myLinkedIn {
+            font-size: 13px;
+            color: rgba(1, 72, 131);
+        }
+        
+        .QRCode {
+            float: right;
+            width: 0.8in
+        }
+        
+        .myPortfolio {
+            font-size: 9px;
+            text-align: center;
+            color: rgba(1, 72, 131);
+        }
+    </style>
+
 </head>
 
 <body>
-
-<div class="test">
-    <div class="company-card">
-        <table class="table-comp">
-            <tr>
-                <td class="img-cell">
-                    <img src="Icons/Dell.jpeg" class="img-company">
-                </td>
-                <td>
-                    <div class="uniq-margin">
-                        <div class="designation">
-                            Software Dev Analyst
-                        </div>
-                        <div class="comp-name">
-                            Dell International Services India Private Limited
-                        </div>
-                        <div class="location small_gray">
-                            Bangalore, India
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="td-right date">
-                        07/2011 - 02/2015
-                    </div>
-                    <div class="td-right small_gray">
-                        team size: <span class="team-size">20+</span>
-                    </div>
-                    <div class="td-right small_gray">
-                        <div class="container-languages">
-
-                            <img src="Icons/langs/circular/c.png" class="img-lang" style="z-index: 99;">
-                            <img src="Icons/langs/circular/sql2.png" class="img-lang" style="z-index: 98;">
-                            <img src="Icons/langs/circular/shell8.png" class="img-lang" style="z-index: 97; background-color: black; padding-top: 3px; padding-left: 1px;">
-                            <!-- <div style="position:relative;">
-                                <div class="trial1" style="z-index: 96; border: 1px solid green;"></div>
-                                <img src="Icons/langs/cvs_tortoise.png" class="img-lang" style="z-index: 95; padding: 2px;">
-                            </div> -->
-                            <!-- <img src="Icons/langs/circular/shell11.png" class="img-lang" style="z-index: 5; background-color: black; padding: 1px"> -->
-                            <!-- <div style="position:relative;">
-                                <div class="trial1" style="z-index: 94; border: 1px solid orange;"></div>
-                                <img src="Icons/langs/cvs1.png" class="img-lang" style="z-index: 93; padding: 3px;">
-                            </div> -->
-                            <!-- <img src="Icons/langs/sql4.png" class="img-lang" style="z-index: 92; "> -->
-                            <!-- <div style="position:relative;">
-                                <div class="trial1" style="z-index: 91; border: 1px solid lightgray;"></div> -->
-                            <img src="Icons/langs/linux7.png" class="img-lang" style="z-index: 90; background-color:darkcyan;">
-                            <!-- <img src="Icons/langs/oracle.png" class="img-lang" style="z-index: 89;"> -->
-                            <!-- </div> -->
-                            <!-- <div class="img-plus" style="z-index: 1;">...</div> -->
-
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <div class="partial-border">
-                        &nbsp;
-                    </div>
-                </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="3" class="description">
-                    <ul>
-                        <li>
-                            Developed new features for the billing solution developed for Enterprise Holdings Inc.
-                        </li>
-                        <li>
-                            Analyzed daily production runs of batch processes and fixed memory leaks in the billing system
-                        </li>
-                        <li>
-                            Took initiative and automated bi-weekly code packaging and delivery process. This effectively saved 8500 Man-hours per year and hence obtained “Lean certified” title for the project
-                        </li>
-                        <li>
-                            Achieved Spot Award - Global Recognition Program - Q2 FY14 for the contributions to the project
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
+    <div class="class1">
+        <h3 style="color:dodgerblue;">... Under Construction ...</h3>
     </div>
-    <br>
-    <div class="company-card">
-        <table class="table-comp">
-            <tr>
-                <td class="img-cell">
-                    <img src="Icons/Bosch_Color.png" class="img-company">
-                </td>
-                <td>
-                    <div class="uniq-margin">
-                        <div class="designation">
-                            Senior Software Engineer
-                        </div>
-                        <div class="comp-name">
-                            Robert Bosch Engineering and Business Solutions Pvt. Ltd.
-                        </div>
-                        <div class="location small_gray">
-                            Bangalore, India
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="td-right date">
-                        02/2015 - 06/2016
-                    </div>
-                    <div class="td-right small_gray">
-                        team size: <span class="team-size">10+</span>
-                    </div>
-                    <div class="td-right small_gray">
-                        <div class="container-languages">
-                            <!-- <div class="img-plus" style="z-index: 1;">...</div> -->
-                            <img src="Icons/langs/circular/c.png" class="img-lang" style="z-index: 99;">
-                            <!-- <img src="Icons/langs/cpu2.png" class="img-lang" style="z-index: 98;">
-                            <img src="Icons/langs/engine5.png" class="img-lang" style="z-index: 97;"> -->
-<!--                             <img src="Icons/langs/circular/kanban-512.png" class="img-lang" style="z-index: 96;"> -->
-                            <img src="Icons/langs/RTOS2.png" class="img-lang" style="z-index: 84; padding: 2px; background-color: black;">
-                            <img src="Icons/langs/chip3.png" class="img-lang" style="z-index: 78;">
+    <div class="contact-card font-monospace">
+        <div class="myName">Ashish Joseph Vattoth
+            <div class="QRCode">
+                <img src="HTML_CSS_Resume/Icons/QRCode/qr-code-ashish.png" class="QRCode">
+                <div class="myPortfolio">ashishjv.github.io</div>
+            </div>
+        </div>
+        <div class="myRole">Software Developer</div>
+        <br><br>
+        <div style="display: flex; width:100%; color:#333; margin-top:30px">
+            <div class="left-side">
+                <img class="stickerIcons" src="HTML_CSS_Resume/Icons/google_loc.png">
+            </div>
+            <div class="middle-side" style="align-self: flex-end">
+                Chicago,&nbspIL
+            </div>
+            <div class="right-side">
+                <div class="myGitHub"><a href="https://github.com/ashishjv" style="color:#555">github.com/ashishjv</a>
+                </div>
+                <div class="myLinkedIn "><a href="https://www.linkedin.com/in/ashishjv/">linkedin.com/in/ashishjv</a>
+                </div>
+            </div>
 
-                            <!-- <div class="img-plus" style="z-index: 1;">...</div> -->
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <div class="partial-border uniq-margin">
-                        &nbsp;
-                    </div>
-                </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td colspan="3" class="description">
-                    <ul>
-                        <li>
-                            Developed customized Real-Time Electronic Control Unit (ECU) software modules related to Fuel Purge Control System for new or existing engines designed by different automobile manufacturers
-                        </li>
-                        <li>
-                            Integrated modules to the automobile's Real-Time Operating System (RTOS) for various Engine configurations
-                        </li>
-                        <li>
-                            Optimized designs by analyzing the results obtained from System testing these modules on hardware emulator
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
+        </div>
     </div>
-</div>
-
 </body>
 
 </html>
